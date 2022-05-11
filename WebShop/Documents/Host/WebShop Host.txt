@@ -1,0 +1,62 @@
+آدرس کنترل پنل هاست	
+https://oyatarz.com:8443
+188.40.196.234
+oyatarz.com
+Robotic@8678
+
+========================================
+
+SQL Server :	
+https://oyatarz.com:8443
+188.40.196.234
+oyatarz.com
+Robotic@8678
+
+========================================
+
+آدرس کنترل پنل دامنه 	
+https://manage.radcom.co
+oyatarz.com
+oyatarz
+Robotic@8678
+
+========================================
+Email Server:
+webmail.oyatarz.com
+info@oyatarz.com
+Robotic@8678
+ 
+======================================== 
+Database server:
+oyatarz.com
+WebShopAdmin
+Robotic@8678
+ 
+========================================
+
+oyatarz.com DNS
+
+ns2.parsihost.com
+ns64.parsihost.com
+
+oyatarz.ir DNS
+
+ns55.dnslake.com
+ns2.parsihost.com
+=============
+
+https://hub.iranserver.com/clientarea.php?action=domains
+mailto:popxqoq@gmail.com
+m2939824274
+=================
+Esra:
+https://oyastil.com/wp-admin/
+
+یوزرنیم : fatemehmohamadporynaim
+
+پسورد :&sL0@YFs4rWbGmBrLqHCBg*V
+
+
+
+tr.atakdomain.com
+eu.atakdomain.com

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ 
+ 
+<!--port="587"-->
+<smtp
+  deliveryMethod="Network"
+  from="info@oyatarz.com">
+  <network
+    host="webmail.oyatarz.com"
+    password="Robotic@8678"
+    port="587"
+    userName="info@oyatarz.com"
+    enableSsl="false" />
+</smtp>
+<!--<smtp
+  deliveryMethod="Network"
+  from="info@anglosofy.com">
+  <network
+    host="webmail.anglosofy.com"
+    password="Robotic@8678"
+    port="587"
+    userName="info@anglosofy.com"
+    enableSsl="true" />
+</smtp>-->
