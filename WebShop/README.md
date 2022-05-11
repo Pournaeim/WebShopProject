@@ -1,2 +1,0 @@
-# WebShop
- Multilingual web shop
