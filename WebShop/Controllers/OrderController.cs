@@ -190,6 +190,7 @@ namespace WebShop.Controllers
             return View("InvoiceGrid", new VmInvoiceManagement());
         }
 
+        [AllowAnonymous]
         [ActionName("lmig")]
         public ActionResult LoadMobileInvoiceGrid()
         {

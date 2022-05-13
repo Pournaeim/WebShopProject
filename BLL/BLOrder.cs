@@ -128,10 +128,10 @@ namespace BLL
             return new VmInvoice
             {
                 OrderList = cartItems,
+                TempCartId = tempCartId,
                 TotalPrice = orderTotalFeilds?.TotalPrice,
                 TotalQuantity = orderTotalFeilds?.TotalQuantity,
-                TempCartId = tempCartId,
-                InvoiceId = orderTotalFeilds.InvoiceId
+                InvoiceId = orderTotalFeilds?.InvoiceId
             };
         }
         public VmInvoice GetCartItemsByInvoice(int invoiceId)

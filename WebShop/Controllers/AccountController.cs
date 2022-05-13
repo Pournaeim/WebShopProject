@@ -142,15 +142,15 @@ namespace WebShop.Controllers
                     userRoles = (from roles in SmUserRolesList.UserRoles where roles.UserName == UserName select roles.RoleName).AsEnumerable<string>();
                     TempData["UserRoles"] = userRoles;
                 }
-
+                 
                 var result = await SignInManager.PasswordSignInAsync(UserName, model.Password, model.RememberMe, shouldLockout: false);
 
                 switch (result)
-                {
+                {  
                     case SignInStatus.Success:
 
                         CurrentUserId = user.Id;
-
+                         
                         if (string.IsNullOrEmpty(returnUrl))
                         {
                             if (userRoles.Contains(SystemRoles.Admin.ToString()))
@@ -158,8 +158,12 @@ namespace WebShop.Controllers
                                 ViewBag.UserRole = "Admin";
                                 return RedirectToAction("index", "admin");
                             }
+                            else
+                            {
+                                ViewBag.UserRole = "Member";
+                                return RedirectToAction("index", "home");
+                            }
 
-                            ViewBag.UserRole = "Member";
                         }
 
                         return Redirect(returnUrl);
@@ -340,8 +344,8 @@ namespace WebShop.Controllers
 
                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", "<h1>" + domainName +
                        "</h1><br/><h2>Please confirm your account by clicking <a href=\""
-                       + callbackUrl 
-                        + "&tempCartId=" + model.TempCartId + "&returnUrl=" + model.ReturnUrl + 
+                       + callbackUrl
+                        + "&tempCartId=" + model.TempCartId + "&returnUrl=" + model.ReturnUrl +
                        "\">here</h2></a>" +
 
                        "<br/><br/><span>Or copy link below and paste in the browser: </span><br/>" + callbackUrl +
@@ -488,7 +492,7 @@ namespace WebShop.Controllers
 
                 await UserManager.SendEmailAsync(userId, "Confirm your account", "<h1>" + domainName +
                     "</h1><br/><h2>Please confirm your account by clicking <a href=\"" + callbackUrl
-                    + "&tempCartId=" + tempCartId + "&returnUrl=" + returnUrl 
+                    + "&tempCartId=" + tempCartId + "&returnUrl=" + returnUrl
 
                     + "\">here</h2></a>" +
 

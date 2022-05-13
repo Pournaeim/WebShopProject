@@ -33,6 +33,6 @@ namespace Model.ViewModels.Invoice
         public string TransactionNo { get; set; }
         public string StringDate { get; set; }
         public string PersianDate { get; set; }
-        public int InvoiceId { get; set; }
+        public int? InvoiceId { get; set; }
     }
 }
